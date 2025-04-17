@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip Login</title>
+</head>
+<body>
+    <h1>Welcome to the Payslip System</h1>
+    <form id="login-form">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <div id="payslip-link" style="display:none;">
+        <h2>Your Payslip:</h2>
+        <a href="#" target="_blank" id="payslip">Download Payslip</a>
+    </div>
+
+    <script>
+      // Simulating login and showing the payslip link (replace with your logic)
+      document.getElementById('login-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Simulating successful login
+          document.getElementById('login-form').style.display = 'none';
+          document.getElementById('payslip-link').style.display = 'block';
+          document.getElementById('payslip').href = "https://drive.google.com/your-payslip-link"; // Replace with real link
+      });
+    </script>
+</body>
+</html>
